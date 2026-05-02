@@ -16,7 +16,7 @@
   <meta property="og:url" content="https://pielbonita.com.ar"> <!-- TODO: reemplazar con URL real -->
   <meta property="og:title" content="Piel Bonita | Depilación Láser en El Calafate">
   <meta property="og:description" content="Tu piel, tu momento bonito. Centro especializado en depilación láser en El Calafate, Patagonia.">
-  <meta property="og:image" content="assets/images/og-image.jpg"> <!-- TODO: agregar imagen og real -->
+  <meta property="og:image" content="assets/images/logo-piel-bonita.png">
   <meta property="og:locale" content="es_AR">
   <meta property="og:site_name" content="Piel Bonita">
 
@@ -24,13 +24,15 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Piel Bonita | Depilación Láser en El Calafate">
   <meta name="twitter:description" content="Tu piel, tu momento bonito. Centro especializado en depilación láser.">
-  <meta name="twitter:image" content="assets/images/og-image.jpg"> <!-- TODO: agregar imagen og real -->
+  <meta name="twitter:image" content="assets/images/logo-piel-bonita.png">
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://pielbonita.com.ar"> <!-- TODO: reemplazar con URL real -->
 
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico"> <!-- TODO: agregar favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="256x256" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/favicon.png">
 
   <!-- Preconnect Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -81,6 +83,12 @@
     "priceRange": "$$",
     "currenciesAccepted": "ARS",
     "paymentAccepted": "Cash, Credit Card, Debit Card, Transfer",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "assets/images/logo-piel-bonita.png",
+      "width": 4306,
+      "height": 2464
+    },
     "sameAs": [
       "https://instagram.com/pielbonita98"
     ]
@@ -96,8 +104,13 @@
     <div class="header__container">
 
       <a href="#inicio" class="header__logo" aria-label="Piel Bonita - Ir al inicio">
-        <span class="header__logo-text">Piel <span class="header__logo-accent">Bonita</span></span>
-        <span class="header__logo-sub">Centro Láser</span>
+        <img
+          src="assets/images/logo-piel-bonita-header.png"
+          alt="Piel Bonita - Centro Láser"
+          class="header__logo-img"
+          width="349"
+          height="200"
+        >
       </a>
 
       <nav class="header__nav" id="nav" aria-label="Navegación principal">
@@ -168,43 +181,13 @@
         </div>
 
         <div class="hero__visual" aria-hidden="true">
-          <!-- Decoración SVG floral abstracta -->
-          <svg class="hero__svg" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="240" cy="240" r="210" fill="#F5E6EC" opacity="0.5"/>
-            <circle cx="240" cy="240" r="160" fill="#FAF5F7" opacity="0.4"/>
-            <!-- Pétalos externos -->
-            <ellipse cx="240" cy="100" rx="55" ry="95" fill="#D4A5BC" opacity="0.35" transform="rotate(0 240 240)"/>
-            <ellipse cx="240" cy="100" rx="55" ry="95" fill="#D4A5BC" opacity="0.35" transform="rotate(60 240 240)"/>
-            <ellipse cx="240" cy="100" rx="55" ry="95" fill="#D4A5BC" opacity="0.35" transform="rotate(120 240 240)"/>
-            <ellipse cx="240" cy="100" rx="55" ry="95" fill="#B87A95" opacity="0.28" transform="rotate(180 240 240)"/>
-            <ellipse cx="240" cy="100" rx="55" ry="95" fill="#B87A95" opacity="0.28" transform="rotate(240 240 240)"/>
-            <ellipse cx="240" cy="100" rx="55" ry="95" fill="#B87A95" opacity="0.28" transform="rotate(300 240 240)"/>
-            <!-- Pétalos internos -->
-            <ellipse cx="240" cy="155" rx="35" ry="60" fill="#8B4F6F" opacity="0.2" transform="rotate(30 240 240)"/>
-            <ellipse cx="240" cy="155" rx="35" ry="60" fill="#8B4F6F" opacity="0.2" transform="rotate(90 240 240)"/>
-            <ellipse cx="240" cy="155" rx="35" ry="60" fill="#8B4F6F" opacity="0.2" transform="rotate(150 240 240)"/>
-            <ellipse cx="240" cy="155" rx="35" ry="60" fill="#8B4F6F" opacity="0.2" transform="rotate(210 240 240)"/>
-            <ellipse cx="240" cy="155" rx="35" ry="60" fill="#8B4F6F" opacity="0.2" transform="rotate(270 240 240)"/>
-            <ellipse cx="240" cy="155" rx="35" ry="60" fill="#8B4F6F" opacity="0.2" transform="rotate(330 240 240)"/>
-            <!-- Centro -->
-            <circle cx="240" cy="240" r="48" fill="#8B4F6F" opacity="0.45"/>
-            <circle cx="240" cy="240" r="28" fill="#C9A87C" opacity="0.6"/>
-            <circle cx="240" cy="240" r="12" fill="#FAF5F7" opacity="0.8"/>
-            <!-- Puntos decorativos -->
-            <circle cx="240" cy="48"  r="7" fill="#C9A87C" opacity="0.65"/>
-            <circle cx="378" cy="121" r="5" fill="#8B4F6F" opacity="0.5"/>
-            <circle cx="378" cy="359" r="7" fill="#C9A87C" opacity="0.6"/>
-            <circle cx="240" cy="432" r="5" fill="#8B4F6F" opacity="0.5"/>
-            <circle cx="102" cy="359" r="7" fill="#D4A5BC" opacity="0.65"/>
-            <circle cx="102" cy="121" r="5" fill="#B87A95" opacity="0.5"/>
-            <!-- Líneas decorativas exteriores -->
-            <line x1="240" y1="22"  x2="240" y2="55"  stroke="#C9A87C" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.55"/>
-            <line x1="395" y1="103" x2="380" y2="130" stroke="#8B4F6F" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.45"/>
-            <line x1="395" y1="377" x2="380" y2="350" stroke="#C9A87C" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.5"/>
-            <line x1="240" y1="458" x2="240" y2="425" stroke="#8B4F6F" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.45"/>
-            <line x1="85"  y1="377" x2="100" y2="350" stroke="#D4A5BC" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.55"/>
-            <line x1="85"  y1="103" x2="100" y2="130" stroke="#B87A95" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.45"/>
-          </svg>
+          <img
+            src="assets/images/logo-piel-bonita-hero.png"
+            alt="Piel Bonita - Centro Láser"
+            class="hero__svg"
+            width="1048"
+            height="600"
+          >
         </div>
 
       </div>
@@ -831,8 +814,13 @@
 
       <div class="footer__brand">
         <a href="#inicio" class="footer__logo" aria-label="Piel Bonita - Ir al inicio">
-          <span class="footer__logo-text">Piel <span>Bonita</span></span>
-          <span class="footer__logo-sub">Centro Láser</span>
+          <img
+            src="assets/images/logo-piel-bonita-header.png"
+            alt="Piel Bonita - Centro Láser"
+            class="footer__logo-img"
+            width="349"
+            height="200"
+          >
         </a>
         <p class="footer__tagline">Tu piel, tu momento bonito.</p>
         <div class="footer__social" aria-label="Redes sociales">

@@ -106,6 +106,10 @@
     width: 100%;
   }
 
+  .header__logo-img {
+    height: 42px;
+  }
+
   /* Hero: columna única */
   .hero__container {
     grid-template-columns: 1fr;
