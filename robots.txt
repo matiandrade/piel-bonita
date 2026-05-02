@@ -1,0 +1,13 @@
+# robots.txt - Piel Bonita
+# https://pielbonita.com.ar/robots.txt
+# TODO: actualizar User con el dominio real cuando esté disponible
+
+User-agent: *
+Allow: /
+
+# Bloquear recursos internos si los hubiera
+Disallow: /assets/images/originals/
+
+# Sitemap
+Sitemap: https://pielbonita.com.ar/sitemap.xml
+# TODO: crear sitemap.xml y actualizar URL

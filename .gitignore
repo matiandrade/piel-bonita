@@ -1,0 +1,56 @@
+# Sistema operativo
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# Dependencias (si en el futuro se agregan build tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Build / distribución
+dist/
+build/
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+
+# Variables de entorno
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# Imágenes originales de alta resolución (pesadas, van por FTP/CDN)
+assets/images/originals/
+assets/images/raw/
+
+# Archivos de diseño
+*.psd
+*.ai
+*.sketch
+*.fig

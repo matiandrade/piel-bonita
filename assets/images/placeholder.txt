@@ -1,0 +1,79 @@
+IMÁGENES NECESARIAS - PIEL BONITA
+===================================
+
+Reemplazar los placeholders del HTML con imágenes reales.
+Todos los archivos van en esta carpeta: assets/images/
+
+OBLIGATORIAS ANTES DE ENTREGAR
+-------------------------------
+
+1. og-image.jpg
+   Uso:     Meta tag Open Graph (compartir en redes sociales)
+   Tamaño:  1200 × 630 px
+   Formato: JPG, calidad 85%
+   Consejo: Foto del local o collage de servicios con logo superpuesto
+
+2. favicon.ico (o favicon.png)
+   Uso:     Ícono de la pestaña del navegador
+   Tamaño:  32×32 px (ICO multi-resolución: 16, 32, 48)
+   Formato: ICO o PNG
+   Consejo: Puede ser la inicial "PB" con el color primario (#8B4F6F)
+
+3. foto-local.jpg (o .webp)
+   Uso:     Sección "Sobre Nosotras" (reemplazar el div placeholder)
+   Tamaño:  800 × 1000 px mínimo (ratio 4:5)
+   Formato: WEBP preferido, JPG fallback
+   HTML:    Cambiar el div.about__image-placeholder por:
+            <img src="assets/images/foto-local.webp"
+                 alt="Interior del local de Piel Bonita en El Calafate"
+                 class="about__image"
+                 loading="lazy"
+                 width="800" height="1000">
+
+
+OPCIONALES (mejoran la web)
+-------------------------------
+
+4. hero-bg.jpg
+   Uso:     Imagen de fondo opcional para el hero
+   Tamaño:  1920 × 1080 px mínimo
+   Formato: WEBP
+   Nota:    Actualmente el hero usa un gradiente CSS; agregar imagen es opcional
+
+5. team-foto.jpg
+   Uso:     Foto del equipo de profesionales
+   Tamaño:  600 × 400 px
+   Formato: WEBP o JPG
+
+
+BUENAS PRÁCTICAS DE OPTIMIZACIÓN
+-----------------------------------
+- Usar formato WEBP para fotografías (30-40% más liviano que JPG)
+- Exportar a máximo 200KB por imagen
+- Herramientas gratuitas: squoosh.app, tinypng.com, imageoptim.com
+- Siempre incluir atributos width y height en las etiquetas <img>
+- Usar loading="lazy" en todas las imágenes excepto las del viewport inicial
+
+
+CÓMO AGREGAR LA FOTO DEL LOCAL
+---------------------------------
+En index.html, buscar:
+  <div class="about__image-placeholder" ...>
+
+Reemplazar todo ese div con:
+  <img
+    src="assets/images/foto-local.webp"
+    alt="Interior del centro Piel Bonita en El Calafate, Santa Cruz"
+    class="about__image"
+    loading="lazy"
+    width="800"
+    height="1000"
+  >
+
+Y en styles.css, agregar:
+  .about__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-2xl);
+  }
