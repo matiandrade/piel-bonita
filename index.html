@@ -181,13 +181,30 @@
         </div>
 
         <div class="hero__visual" aria-hidden="true">
-          <img
-            src="assets/images/logo-piel-bonita-hero.png"
-            alt="Piel Bonita - Centro Láser"
-            class="hero__svg"
-            width="1048"
-            height="600"
-          >
+          <svg class="hero__svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="none">
+            <!-- 8 pétalos abstractos rotados alrededor del centro -->
+            <ellipse cx="200" cy="122" rx="30" ry="68" fill="#D4A5BC" opacity="0.5"/>
+            <ellipse cx="200" cy="122" rx="30" ry="68" fill="#B87A95" opacity="0.4" transform="rotate(45 200 200)"/>
+            <ellipse cx="200" cy="122" rx="30" ry="68" fill="#D4A5BC" opacity="0.5" transform="rotate(90 200 200)"/>
+            <ellipse cx="200" cy="122" rx="30" ry="68" fill="#B87A95" opacity="0.4" transform="rotate(135 200 200)"/>
+            <ellipse cx="200" cy="122" rx="30" ry="68" fill="#D4A5BC" opacity="0.45" transform="rotate(180 200 200)"/>
+            <ellipse cx="200" cy="122" rx="30" ry="68" fill="#B87A95" opacity="0.35" transform="rotate(225 200 200)"/>
+            <ellipse cx="200" cy="122" rx="30" ry="68" fill="#D4A5BC" opacity="0.45" transform="rotate(270 200 200)"/>
+            <ellipse cx="200" cy="122" rx="30" ry="68" fill="#B87A95" opacity="0.35" transform="rotate(315 200 200)"/>
+            <!-- Anillo exterior decorativo -->
+            <circle cx="200" cy="200" r="178" stroke="#D4A5BC" stroke-width="1" opacity="0.25" stroke-dasharray="3 9"/>
+            <!-- Anillo interior -->
+            <circle cx="200" cy="200" r="52" stroke="#8B4F6F" stroke-width="1" opacity="0.15"/>
+            <!-- Centro de la flor -->
+            <circle cx="200" cy="200" r="36" fill="#8B4F6F" opacity="0.8"/>
+            <circle cx="200" cy="200" r="22" fill="#C9A87C" opacity="0.85"/>
+            <circle cx="200" cy="200" r="9" fill="#FAF5F7" opacity="0.65"/>
+            <!-- Puntos decorativos en los ejes -->
+            <circle cx="200" cy="14"  r="4" fill="#8B4F6F" opacity="0.2"/>
+            <circle cx="386" cy="200" r="4" fill="#8B4F6F" opacity="0.2"/>
+            <circle cx="200" cy="386" r="4" fill="#8B4F6F" opacity="0.2"/>
+            <circle cx="14"  cy="200" r="4" fill="#8B4F6F" opacity="0.2"/>
+          </svg>
         </div>
 
       </div>

@@ -69,6 +69,10 @@
    MOBILE → TABLET (< 768px)
    ------------------------------------------------ */
 @media (max-width: 767px) {
+  :root {
+    --header-height: 65px;
+  }
+
   /* Header */
   .header__hamburger {
     display: flex;
@@ -107,7 +111,8 @@
   }
 
   .header__logo-img {
-    height: 42px;
+    height: auto;
+    max-height: 40px;
   }
 
   /* Hero: columna única */
