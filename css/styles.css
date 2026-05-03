@@ -1540,3 +1540,26 @@ details > summary::-webkit-details-marker {
     transform: none;
   }
 }
+/* Firma del Desarrollador */
+.footer__dev-link {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 4px;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.footer__dev-link:hover {
+    color: var(--color-accent);
+    border-bottom: 1px solid var(--color-accent);
+}
+
+/* Ajuste sutil para los créditos */
+.footer__credits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    flex-wrap: wrap;
+}
